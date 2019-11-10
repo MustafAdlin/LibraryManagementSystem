@@ -1,0 +1,26 @@
+.toolbar {
+    -fx-background-color: #569695;
+}
+.jfx-hamburger StackPane {
+    -fx-background-color: #ffffff;
+    -fx-background-radius: 5px;
+}
+.side-menu {
+    -fx-background-color: #569695;
+}
+.side-menu-button {
+    -fx-background-color: #569695;
+    -fx-text-fill: white;
+}
+.side-menu-button:hover {
+    -fx-background-color: #70C1C5;
+}
+.submenu-button {
+    -fx-background-color: #569695;
+    -fx-background-radius: 30;
+    -fx-border-radius: 30;
+    -fx-text-fill: white;
+}
+.submenu-button:hover {
+    -fx-background-color: #70C1C5;
+}

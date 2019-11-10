@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXDrawer?>
+<?import com.jfoenix.controls.JFXHamburger?>
+<?import com.jfoenix.controls.JFXToolbar?>
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.StackPane?>
+
+<StackPane fx:id="dashStackPane" onMouseDragged="#dragged" onMousePressed="#pressed" prefHeight="600.0" prefWidth="1200.0" stylesheets="@style.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.dashboardController">
+   <children>
+      <AnchorPane prefHeight="600.0" prefWidth="1200.0">
+         <children>
+            <JFXToolbar fx:id="toolbar" layoutX="950.0" prefHeight="40.0" prefWidth="250.0" styleClass="toolbar">
+               <left>
+                  <JFXHamburger fx:id="hamburger" prefHeight="40.0" prefWidth="40.0" styleClass="jfx-hamburger" BorderPane.alignment="CENTER" />
+               </left>
+               <right>
+                  <AnchorPane prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+                     <children>
+                        <FontAwesomeIconView accessibleRole="BUTTON" fill="WHITE" glyphName="CLOSE" layoutX="171.0" layoutY="26.0" onMouseClicked="#close" size="20" />
+                        <FontAwesomeIconView accessibleRole="BUTTON" fill="WHITE" glyphName="SORT_DOWN" layoutX="148.0" layoutY="24.0" onMouseClicked="#minimize" size="20" />
+                     </children>
+                  </AnchorPane>
+               </right>
+            </JFXToolbar>
+            <AnchorPane fx:id="contentPane" prefHeight="600.0" prefWidth="950.0" />
+            <JFXDrawer fx:id="drawer" defaultDrawerSize="200.0" direction="RIGHT" layoutX="950.0" layoutY="40.0" prefHeight="560.0" prefWidth="250.0" />
+         </children>
+      </AnchorPane>
+   </children>
+</StackPane>
